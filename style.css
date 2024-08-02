@@ -6,8 +6,7 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  background: #a2b4ff;
-  background: linear-gradient(135deg, #a2b4ff, #06172d);
+  background-image: url(./background.png);
 }
 .main {
   width: 100%;
@@ -24,12 +23,15 @@ body {
   margin-bottom: 50px;
 }
 .main h1 span {
-  color: #f1dafb;
+  color: #ec0d88;
+  background-color: #f48e9f7d;
+  border-radius: 5px;
+  padding: 0 3px;
 }
 textarea {
   width: 600px;
   height: 250px;
-  background: #403d84;
+  background: #7d79cf8c;
   color: #fff;
   font-size: 16px;
   border: 0;
@@ -38,60 +40,58 @@ textarea {
   border-radius: 10px;
   resize: none;
   margin-bottom: 30px;
+  
 }
 textarea::placeholder {
   font-size: 16px;
   color: #ddd;
 }
 .row {
-  width: 500px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 1rem;
+  width: 640px;
 }
 button {
-  background: #cac7ff;
-  color: #fff;
+  background: #c7feff99;
+  color: #000;
   font-size: 16px;
-  padding: 10px 30px;
-  border-radius: 35px;
+  border-radius: 10px;
   border: 0;
   outline: 0;
   cursor: pointer;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 2.8rem;
 }
 select {
-  flex: 1;
-  color: #fff;
-  background: #cac7ff;
-  height: 50px;
-  padding: 0 20px;
+  color: #000;
+  background: #c7feff99;
+  height: 2.8rem;
+  padding: 0.1rem;
   outline: 0;
   border: 0;
-  border-radius: 35px;
+  border-radius: 10px;
   appearance: none;
+  width: 50%;
 }
 @media (max-width: 642px) {
   .main h1 {
-    font-size: 25px;
-    font-weight: 250;
-    margin-top: -20px;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    width: 250px;
+    text-align: center;
   }
   textarea {
     width: 250px;
   }
   .row {
-    width: 365px;
-    gap: 5px;
+    width: 290px;
   }
   select {
-    padding: 0 2px;
-    height: 30px;
     font-size: 14px;
   }
   button {
-    padding: 5px 5px;
     font-size: 14px;
   }
 }
